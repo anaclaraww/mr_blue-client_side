@@ -36,7 +36,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 20vw;
+    width: 300px;
 }
 .item_detection img{
     border-radius: 20px;
@@ -45,4 +45,13 @@
 
 .item_detection a{
     color: rgba(0, 0, 0, 0.676);
+}
+
+@media (max-width: 48em) {
+    .detections_article{
+        width: 80%;
+    }
+    .item_detection{
+        margin-top: 10%;
+    }
 }
