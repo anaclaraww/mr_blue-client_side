@@ -2,7 +2,7 @@
     position: relative;
     min-height: 800px; 
   
-    background:  linear-gradient(transparent,transparent, rgba(255, 255, 255, 0.944)),url('./img/fundo_inicio.jpg')no-repeat center center / cover  ;
+    background:  linear-gradient(transparent,transparent, rgba(255, 255, 255, 0.944)), url('../img/fundo_inicio.jpg')no-repeat center center / cover  ;
     padding: 20px;
    }
    .inicio_section .title{
