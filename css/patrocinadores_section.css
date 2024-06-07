@@ -1,0 +1,21 @@
+
+.patrocinadores_section{
+    width: 90%;
+    margin: 20% auto;
+    text-align: center;
+}
+.patrocinadores_section figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2%;
+
+}
+
+.patrocinadores_section img{
+    max-height:80px;
+    width: auto;
+    padding: .5%;
+
+}
+

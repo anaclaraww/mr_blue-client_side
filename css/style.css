@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+
+  a {
+    color: #000;
+  }
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #b7cede;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+.hidden{
+    opacity: 0;
+    transition: 3s all;
+    
+}
+.translate-left{
+    transform: translateX(-10%);
+}
+.show{
+    opacity: 1;
+    transition: 3s all;
+    transform: translateX(0);
+}

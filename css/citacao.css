@@ -1,0 +1,12 @@
+.citacao{
+    width: 80%;
+    margin: 20% auto;
+    background-color: #96cad58d;
+    padding: 10%;
+}
+
+.citacao q, cite{
+    font-weight: 700;
+    color: #023A47;
+    font-size: large;
+}

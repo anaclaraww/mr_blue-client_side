@@ -1,0 +1,53 @@
+.numeros_anuais_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.numeros_anuais_section .numeros_section{
+    display:flex;
+    margin: 0 auto;
+    width: 70%;
+    font-size: large;
+
+}
+.numeros_anuais_section h3{
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+.numeros_section h2,h4{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.estreitas_figure{
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2%
+}
+
+.estreitas_figure img{
+    width: 14%;
+    height: 300px;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+    
+}
+.estreitas_figure img:hover{
+    width: 30%;
+}
+
+@media (min-width: 48em) {
+    .estreitas_figure img{
+        width: 14%;
+        height: 500px;
+    }
+    .numeros_anuais_section .numeros_section{
+        font-size: xx-large;}
+}

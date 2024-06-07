@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/inicio_section.css">
-    <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/second_section.css">
-    <link rel="stylesheet" href="/static/css/garrafas_section.css">
-    <link rel="stylesheet" href="/static/css/mrblue_section.css">
-    <link rel="stylesheet" href="/static/css/resultados_section.css">
-    <link rel="stylesheet" href="/static/css/patrocinadores_section.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/inicio_section.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/second_section.css">
+    <link rel="stylesheet" href="/css/garrafas_section.css">
+    <link rel="stylesheet" href="/css/mrblue_section.css">
+    <link rel="stylesheet" href="/css/carrossel_section.css">
+    <link rel="stylesheet" href="/css/citacao.css">
+    <link rel="stylesheet" href="/css/5formas_section.css">
+    <link rel="stylesheet" href="css/detections_section.css">
+    <link rel="stylesheet" href="/css/patrocinadores_section.css">
     <link rel="stylesheet" href="">
-    <title>Document</title>
+    <title>Mr. Blue</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,10 +36,11 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#work">Our Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#mr_blue">Sobre Mr. Blue</a></li>
+                <li><a href="#5passos">Formas de Ajudar</a></li>
+                <li><a href="#parceiros">Apoio</a></li>
+                <li><a href="/pages/login.html">Login | Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -45,8 +49,8 @@
 
     </section>
 
-    <section class="numeros_anuais_section">
-        <article class="numeros_section">
+    <section class="numeros_anuais_section ">
+        <article class="numeros_section hidden" id="dados">
             <span>
                 <h2>+170Tri</h2>
                 <h4>Partículas de plástico</h4>
@@ -60,86 +64,83 @@
                 <h4>Do plástico &nbsp; consumido no Brasil</h4>
             </span>
         </article>
+        <br>
         <h3>Flutuando nos nossos oceanos</h3>
-        <figure class="estreitas_figure">
-            <img class="img_estreita" src="/bottle47.jpg" alt="">
-            <img class="img_estreita" src="/bottle47.jpg" alt="">
-            <img class="img_estreita" src="/bottle47.jpg" alt="">
-            <img class="img_estreita" src="/bottle47.jpg" alt="">
-            <img class="img_estreita" src="/bottle47.jpg" alt="">
+        <figure class="estreitas_figure hidden translate-left ">
+            <img class="img_estreita" src="img/data1.png" alt="">
+            <img class="img_estreita" src="img/data3.png" alt="">
+            <img class="img_estreita" src="img/data4.png" alt="">
+            <img class="img_estreita" src="img/data2.png" alt="">
+            <img class="img_estreita" src="img/data5.png" alt="">
         </figure>
     </section>
 
-    <section class="garrafas_section">
+    <section class="garrafas_section hidden">
         <figure>
-            <img src="/static/img/garrafas_black.png" alt="">
+            <img src="/img/garrafas_black.png" alt="">
         </figure>
-        <article class="garrafas_article center">
+        <article class="garrafas_article center hidden translate-left">
             <h1>As garrafas</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis nulla dicta, odit pariatur earum
-                obcaecati quo neque tempora facere, omnis similique ipsam hic minus sapiente eveniet. Nobis, inventore
-                quod. Labore.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis nulla dicta, odit pariatur earum
-                obcaecati quo neque tempora facere, omnis similique ipsam hic minus sapiente eveniet. Nobis, inventore
-                quod. Labore.</p>
-            <div><span>50% kakakka</span><span> 50% kakakka</span></div>
+            <p>As garrafas plásticas, outrora símbolos de conveniência, se transformaram em um dos maiores pesadelos dos
+                nossos oceanos. Estima-se que 8 milhões de toneladas desses recipientes sejam lançados nas águas a cada
+                ano, um número alarmante que cresce a um ritmo preocupante..</p>
+
+            <p>As consequências da poluição por garrafas plásticas nos oceanos vão além da vida marinha. O turismo
+                costeiro, um importante setor da economia global, é afetado pela presença de lixo plástico nas praias. A
+                pesca também é impactada, com redes de pesca danificadas e a qualidade dos frutos do mar comprometida.
+            </p>
+
         </article>
     </section>
 
-    <section class="mrblue_section">
-        <article class="mrblue_article">
+    <section class="mrblue_section" id="mr_blue">
+        <article class="mrblue_article hidden">
             <h1>Quem/O que é o Mr. Blue?</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque vero iure, voluptas eveniet itaque
-                animi ab recusandae at aspernatur, quasi similique alias illum. Cum fuga quidem recusandae, tenetur
-                error numquam architecto quam exercitationem eum modi voluptatibus atque nobis amet eaque est quibusdam
-                repellat molestias dicta necessitatibus deserunt facere voluptas hic ex. Natus distinctio delectus amet
-                tenetur beatae at, minima numquam porro, esse deleniti fuga? Numquam exercitationem nam, sapiente
-                laborum doloremque commodi. Nam quibusdam eveniet asperiores nesciunt laudantium enim voluptatibus
-                provident ab. Doloribus voluptatum, enim ratione blanditiis, ea placeat maxime ducimus ipsam ad ex
-                deserunt, ab perferendis nisi nulla esse? Nesciunt!</p>
+            <p>A solução desenvolvida consiste em equipar drones com visão computacional programada em Python,
+                utilizando modelos pré-treinados com a finalidade de identificação e rastreamento de conjuntos de
+                garrafas plásticas flutuando pelos oceanos em tempo real. Essa tecnologia permitirá a detecção precisa e
+                eficiente das garrafas, facilitando o encontro de grandes acúmulos de lixos.
+
+            </p>
+            <br>
+            <p>
+                Os usuários terão acesso as informações da localização das garrafas plásticas detectadas pelos drone
+                diretamente aqui no plataforma.
+                Essa ferramenta intuitiva
+                permitirá aos usuários visualizarem as áreas com maior concentração de garrafas e ao se cadastrarem
+                podem selecionar conjuntos que desejam coletar e com isso ganhar pontos. Os pontos é a forma de
+                recompensar as boas atitudes, sendo possível troca-los por equipamentos para ajudar nas coletas.
+            </p>
             <ul>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum.</li>
+                <li>Partipação da população</li>
+                <li>Ganho de pontos</li>
+                <li>Menos plástico flutuando</li>
             </ul>
         </article>
         <figure>
-            <img src="/static/img/drone_tello.png" alt="">
+            <img src="/img/drone_tello.png" alt="">
         </figure>
     </section>
 
-    <section class="resultados_section">
-        <figure class="resultados_figure">
-            <img src="/bottle47.jpg" alt="">
-            <img src="/bottle47.jpg" alt="">
-            <img src="/bottle47.jpg" alt="">
+    <section class="resultados_section hidden">
+        <figure class="resultados_figure hidden translate-left">
+            <img src="img/garrafas1.png" alt="">
+            <img src="img/garrafa_detect.png" alt="">
+            <img src="img/garrafas2.png" alt="">
         </figure>
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
-                <!-- <input type="radio" name="radio-btn" id="radio3"> -->
-                <!-- <input type="radio" name="radio-btn" id="radio4">  -->
 
                 <div class="slide first">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse dolorum veniam
-                        pariatur eius obcaecati.</p>
+                    <p>O projeto pode promover a participação da sociedade civil na proteção ambiental, fortalecendo a
+                        consciência ambiental e o senso de responsabilidade coletiva.</p>
                 </div>
                 <div class="slide">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse dolorum veniam
-                        pariatur eius obcaecati.</p>
-
+                    <p> A implementação dessa iniciativa pode contribuir significativamente para a preservação dos
+                        oceanos e para a construção de um futuro mais sustentável</p>
                 </div>
-                <!-- <div class="slide">
-                    <img src="/static/img/reception1.JPG" alt="img_carrousel">
-                </div> -->
-                <!-- <div class="slide">
-                    <img src="/static/img/reception2.JPG" alt="img_carrousel">
-                </div> -->
-                <!-- <div class="slide">
-                    <img src="/" alt="img_carrousel">
-                </div> -->
-
 
 
             </div>
@@ -147,66 +148,118 @@
             <div class="manual-navigation">
                 <label for="radio1" class="manual-btn" id="btn-radio1"></label>
                 <label for="radio2" class="manual-btn" id="btn-radio2"></label>
-                <!-- <label for="radio3" class="manual-btn" id="btn-radio3"></label> -->
-                <!-- <label for="radio4" class="manual-btn" id="btn-radio4"></label> -->
             </div>
         </div>
     </section>
 
     <section class="detections_section">
-        <h1>Encontrados</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis enim adipisci maiores sapiente id
-            distinctio natus, voluptatem atque dolore deserunt quis quae nemo quasi eos reprehenderit doloremque tempora
-            excepturi architecto sit ducimus, sed eum? Totam fuga facilis id exercitationem amet nisi corrupti quis
-            eaque quia rem. Dolore nam molestiae at praesentium soluta, perferendis aliquam atque minima? Reprehenderit
-            voluptas alias soluta explicabo beatae repellendus repellat dolore possimus nisi enim. Aut quibusdam amet
-            expedita quis pariatur ut animi molestias nemo culpa recusandae!</p>
+        <article class="detections_article">
+            <h1>Encontrados</h1>
+            <p>Na plataforma será exibido dessa forma interativa para coletar as garrafas plásticas! Aqui você poderá
+                visualizar, localizar e notificar que irá coletar
+                garrafas plásticas dos oceanos, contribuindo ativamente para a preservação do meio ambiente.</p>
+        </article>
         <section class="encontrados_grid">
-            <!-- 3fr wrap -->
+            <div class="item_detection">
+                <img src="img/garrafas1.png" alt="" srcset="">
+                <h4>Pernambuco</h4>
+                <p>Praia X, porx X</p>
+                <a href="#">Acessar cord</a>
+                <button class="coletar-btn">Coletar</button>
+            </div>
+            <div class="item_detection">
+                <img src="img/garrafas1.png" alt="" srcset="">
+                <h4>Pernambuco</h4>
+                <p>Praia X, porx X</p>
+                <a href="#">Acessar cord</a>
+                <button class="coletar-btn">Coletar</button>
+            </div>
+            <div class="item_detection">
+                <img src="img/garrafas1.png" alt="" srcset="">
+                <h4>Pernambuco</h4>
+                <p>Praia X, porx X</p>
+                <a href="#">Acessar cord</a>
+                <button class="coletar-btn">Coletar</button>
+            </div>
         </section>
     </section>
 
-    <section class="cinco_formas_section">
-
+    <section class="cinco_formas_section" id="5passos">
+        <img src="/img/ondas.png" alt="">
+        <div class="cinco-passos passo-1">
+            <div class="titulo_passo">
+                <h1>1.</h1>
+                <h3>Combata o Desperdício de Plástico:</h3>
+            </div>
+            <p>Reduza o uso de descartáveis: Opte por alternativas reutilizáveis como sacolas de pano, garrafas de água
+                e canecas; Rejeite embalagens plásticas: Ao fazer compras, dê preferência a produtos com embalagens
+                mínimas ou de materiais recicláveis; Recuse canudos de plástico: Leve seu próprio canudo reutilizável ou
+                peça para beber diretamente do copo; Reutilize e recicle: Dê um novo uso para embalagens plásticas ou
+                descarte-as em lixeiras de reciclagem adequadas.</p>
+        </div>
+        <div class="cinco-passos passo-2">
+            <div class="titulo_passo">
+                <h1>2.</h1>
+                <h3>Participe de Ações de Limpeza:</h3>
+            </div>
+            <p>Além de se voluntariar com o Mr. Blue ou caso queira começar de outra forma que puder, se voluntarie em
+                mutirões de limpeza de praias e rios; Organize ou participe de campanhas de conscientização sobre a
+                poluição plástica; Incentive empresas e comunidades a adotarem práticas sustentáveis; Apoie ONGs que
+                trabalham na proteção dos oceanos e na preservação da vida marinha.</p>
+        </div>
+        <div class="cinco-passos passo-3">
+            <div class="titulo_passo">
+                <h1>3.</h1>
+                <h3>Faça Escolhas Conscientes:</h3>
+            </div>
+            <p>Prefira produtos de marcas comprometidas com a sustentabilidade; Opte por frutos do mar provenientes de
+                pesca sustentável; Evite produtos que contenham microplásticos, como cosméticos e roupas sintéticas;
+                Apoie empresas que investem em soluções inovadoras para o problema do plástico.</p>
+        </div>
+        <div class="cinco-passos passo-4">
+            <div class="titulo_passo">
+                <h1>4.</h1>
+                <h3>Eduque e Incentive Mudanças:</h3>
+            </div>
+            <p>Converse com amigos e familiares sobre a importância de cuidar dos oceanos; Ensine as crianças sobre os
+                impactos da poluição plástica no meio ambiente.; Compartilhe informações e dicas nas redes sociais para
+                conscientizar outras pessoas.; Seja um exemplo positivo á ser seguido, demonstre como é possível viver
+                de forma mais sustentável.</p>
+        </div>
+        <div class="cinco-passos passo-5">
+            <div class="titulo_passo">
+                <h1>5.</h1>
+                <h3>Apoie Políticas Públicas e ideias sustentavéis:</h3>
+            </div>
+            <p>Exija dos governantes medidas para reduzir a produção e o consumo de plástico; Apoie leis que visam
+                proteger os oceanos e a vida marinha; Participe de consultas públicas e cobre ações efetivas para
+                combater a poluição plástica; Vote em candidatos que defendem políticas ambientais sustentáveis</p>
+        </div>
     </section>
 
-    <!-- frase -->
+    <article class="citacao hidden">
+        <q>Uma pessoa sozinha não pode fazer tudo, mas cada um de nós deve fazer algo</q> - <cite>Sylvia Earle
+            (Oceanógrafa)</cite>
+        <i class="bi bi-water"></i>
+    </article>
 
-    <section class="patrocinadores_section">
+    <section class="patrocinadores_section" id="parceiros">
         <h1>Apoio:</h1>
         <figure>
-            <img src="/static/img/usp_logo.png" alt="">
-            <img src="/static/img/aws_logo.png" alt="">
-            <img src="/static/img/redeoceano_logo.png" alt="">
-            <img src="/static/img/usp_logo.png" alt="">
-            <img src="/static/img/pactoglobal.png" alt="">
-            <img src="/bottle47.jpg" alt="">
-            <img src="/bottle47.jpg" alt="">
-            <img src="/bottle47.jpg" alt="">
-            <img src="/bottle47.jpg" alt="">
+            <img src="/img/aws_logo.png" alt="">
+            <img src="/img/redeoceano_logo.png" alt="">
+            <img src="/img/usp_logo.png" alt="">
+            <img src="/img/pactoglobal.png" alt="">
+            <img src="/img/o2o.svg" alt="">
+            <img src="/img/select.svg" alt="">
+            <img src="/img/softtek-logo.svg" alt="">
+            <img src="/img/unesco.svg" alt="">
         </figure>
     </section>
-    <div class="input-group">
-        <div class="input-container ic1">
-            <input id="firstname" name="name" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">Selecione o ambiente</label>
-        </div>
-        <div class="input-container ic2">
-            <input id="lastname" name="phone" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="lastname" class="placeholder">Digite a LPAR</label>
-        </div>
-        <div class="input-container ic2">
-            <input id="email" name="email" class="input" type="text" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="email" class="placeholder">Digite o abend</>
-        </div>
 
-                  
-    </div>
 </body>
-<script src="/static/js/header.js"></script>
-<script src="/static/js/carrossel.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/carrossel.js"></script>
+<script src="/js/efeitoFadeIn.js"></script>
 
 </html>

@@ -1,0 +1,20 @@
+.inicio_section{
+    position: relative;
+    min-height: 800px; 
+  
+    background:  linear-gradient(transparent,transparent, rgba(255, 255, 255, 0.944)),url('/img/fundo_inicio.jpg')no-repeat center center / cover  ;
+    padding: 20px;
+   }
+   .inicio_section .title{
+    margin: 85% auto;
+    width: max-content;
+    font-size: 50px;
+    font-family: "League Spartan", sans-serif;
+   }
+
+   @media (min-width: 48em) {
+    .inicio_section .title{
+        font-size: 100px;
+        margin: 20% auto;
+    }
+   }

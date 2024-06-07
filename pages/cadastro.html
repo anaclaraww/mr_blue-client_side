@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form_cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=La+Belle+Aurore&family=League+Spartan:wght@100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Mrs. Blue</a>
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="/templates/index.html">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Login | Cadastro</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main id="container-login">
+        <figure class="image-login"><img src="/img/form_login.jpg" alt=""></figure>
+        <form id="form_cadastro"  >
+               <h1>Cadastro</h1>
+                <div class="campos" id="campos">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <br>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <br>
+                    <label>CPF:(não será compartilhado, apenas para evitar flaudes)</label>
+                    <input type="text" name="cpf" id="cpf" required>
+                    <br>
+                    <label>Telefone:</label>
+                    <input type="tel" name="tel" id="tel" required>
+                    <br>
+                    <label>Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+                    <br>
+                    <label>Tipo:</label>
+                    <select class="tipo" cols="35" rows="8"  onchange="IdentificarTipoUser(this.value)" required>
+                        <option value="" selected disabled>Selecione...</option>
+                        <option>Coletor</option>
+                        <option>Ponto de coleta</option>
+                        <option>Colaborador de carregamento(bateria)</option>
+                    </select>
+                </div>
+                
+                    <button class="btn_submit" type="submit" value="Enviar" >Entrar</button>
+       
+                  <p>Já possui conta?  <a href="/templates/login.html">Registre-se</a></p> 
+        </form>
+    </main>
+</body>
+<script src="/js/cadastro.js"></script>
+</html>
